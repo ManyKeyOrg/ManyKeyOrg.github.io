@@ -3,41 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>ManyKey.org - Open source tools for custom keyboard interfaces</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/milligram.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="column">
-            <h1>ManyKey.org</h1>
-            <p>Open source software for building custom keyboard interfaces</p>
-          </div>
-        </div>
+        <h1>ManyKey.org</h1>
+        <p>Open source software for building custom keyboard interfaces</p>
+        <div class="clearfix"></div>
       </div>
     </header>
 
     <div class="container" id="main-content">
-      <h3> Keyboard Firmware (Arduino/Atmega) </h3>
+      <h3> Keyboard Firmware (Arduino/ATmega32u4) </h3>
       <div class="row">
-        <div class="column">
+        <div class="col-xs-12 col-md-4">
           <img width="100%" src="img/firmware_ss.png"/>
         </div>
-        <div class="column column-67">
+        <div class="col-xs-12 col-md-8">
           <p>
-            Arduino compatible code to power your keyboard project. Hook up momentary or latching switches to your microcontroller, and program them to trigger whatever keyboard shortcuts you like.
+            Arduino compatible code to power your keyboard project. Hook up momentary switches or buttons to your microcontroller, and program them to trigger whatever keyboard shortcuts you like.
           </p>
           <h4>Features</h4>
           <ul>
-            <li> Supports as many switches/buttons as your microcontroller has pins </li>
+            <li> Supports boards that use an ATmega32u4, or otherwise support USB HIB with the <a href="https://www.arduino.cc/en/Reference/MouseKeyboard">Keyboard</a> library</li>
             <li> Supports 10+ characters pressed simultaneously per switch </li>
             <li> Key configuration is updatable over USB serial (and our desktop software, coming soon) </li>
             <li> Configuration stored in non-volatile memory - no battery required </li>
           </ul>
-          <a class="button button-outline" href="https://github.com/ManyKeyOrg/manykey_firmware_arduino">View Project on GitHub</a>
+          <a class="btn btn-outline-primary" href="https://github.com/ManyKeyOrg/manykey_firmware_arduino">View Project on GitHub</a>
         </div>
       </div>
     </div>
