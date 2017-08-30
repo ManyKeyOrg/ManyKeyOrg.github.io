@@ -20,10 +20,30 @@
       <div class='intro'>
         The goal of the ManyKey project is to make building custom keyboard interfaces as simple as possible. Our open source tools are perfect for building macro keyboards for the disabled, power-users, audio/video production, and gaming. 
       </div>
+
+      <h3> ManyKey Writer (WIP) </h3>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <img width="100%" src="img/writer_ss.png"/>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <p>
+            A desktop program for configuring devices running our keyboard firmware. A work in progress, but totally usable if you can run Python 3 on your computer. Binaries will be available soon!
+          </p>
+          <h4>Features</h4>
+          <ul>
+            <li> Windows, Mac OS, and Linux support</li>
+            <li> Easily read and write key configuration</li>
+            <li> Written with Python 3 and WxPython </li>
+          </ul>
+          <a class="btn btn-outline-primary" href="https://github.com/ManyKeyOrg/manykey_writer">View Project on GitHub</a>
+        </div>
+      </div>
+
       <h3> Keyboard Firmware (Arduino/ATmega32u4) </h3>
       <div class="row">
         <div class="col-xs-12 col-md-4">
-          <img width="100%" src="img/firmware_ss.png"/>
+          <img width="100%" src="img/atmega32u4.jpg"/>
         </div>
         <div class="col-xs-12 col-md-8">
           <p>
@@ -33,7 +53,7 @@
           <ul>
             <li> Supports boards that use an ATmega32u4, or otherwise support USB HIB with the <a href="https://www.arduino.cc/en/Reference/MouseKeyboard">Keyboard</a> library</li>
             <li> Supports 10+ characters pressed simultaneously per switch </li>
-            <li> Key configuration is updatable over USB serial (and our desktop software, coming soon) </li>
+            <li> Key configuration is updatable with our ManyKey Writer software, or USB serial </li>
             <li> Configuration stored in non-volatile memory - no battery required </li>
           </ul>
           <a class="btn btn-outline-primary" href="https://github.com/ManyKeyOrg/manykey_firmware_arduino">View Project on GitHub</a>
