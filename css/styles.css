@@ -107,4 +107,11 @@ img.feature-image {
     right: 0;
     text-align: right;
   }
+
+  .btn-sm { /* revert btn-sm to regular btn */
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+  }
 }
