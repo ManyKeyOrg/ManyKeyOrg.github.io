@@ -85,6 +85,8 @@ img.feature-image {
 }
 
 .intro {
+  border-bottom: 1px dashed #eaeaea;
+  padding-bottom: 1.5em;
   margin-bottom: 1.5em;
 }
 
