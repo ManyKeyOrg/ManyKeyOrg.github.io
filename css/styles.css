@@ -106,6 +106,10 @@ img.feature-image {
   padding: 0.25rem 0.25rem;
 }
 
+.btn.disabled, .btn:disabled {
+    opacity: 0.50;
+}
+
 @media (min-width: 768px ) {
   .row {
     position: relative;
