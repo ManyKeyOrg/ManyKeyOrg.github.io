@@ -102,6 +102,10 @@ img.feature-image {
   margin-bottom: 0.3em;
 }
 
+.btn-sm {
+  padding: 0.25rem 0.25rem;
+}
+
 @media (min-width: 768px ) {
   .row {
     position: relative;
