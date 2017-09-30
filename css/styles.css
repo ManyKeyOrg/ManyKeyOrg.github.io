@@ -15,10 +15,8 @@ body {
   line-height: 1.6;
 }
 
-ul {
-  list-style: inside;
+ul, ol {
   font-size: 0.85em;
-  padding-left: 0.1em;
 }
 
 li {
@@ -57,9 +55,18 @@ h6 {
   line-height: 1.4;
 }
 
+hr {
+  border-top: 1px dashed rgba(0,0,0,.1);
+  margin: 1.75em 0;
+}
+
 img.feature-image {
   max-width: 100%;
   border-radius: 3px;
+}
+
+#tutorial h3 {
+  margin-bottom: 1em;
 }
 
 .col-xs-12{
@@ -108,6 +115,16 @@ img.feature-image {
 
 .btn.disabled, .btn:disabled {
     opacity: 0.50;
+}
+
+.alert-info {
+  background-color: #c6e7ff;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px ) {
