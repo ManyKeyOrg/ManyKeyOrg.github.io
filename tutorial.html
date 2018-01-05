@@ -38,16 +38,12 @@
         <h2 class="page-header"> Tutorial - Build a ManyKey Macro Keyboard</h2>
       </div>
       <div id='tutorial'>
-        <div class="alert alert-info" role="alert">
-          🚧 Heads up! This tutorial is still a work in progress. 🚧
-        </div>
-        <br>
+        <img src="img/tutorial/finished.jpg"/>
 
         <h3> Table of Contents </h3>
         <ol>
           <li><a href="#intro" >Introduction</a></li>
           <li><a href="#parts" >Required parts and tools</a></li>
-          <li><a href="#electronics" >Wiring the electronics</a></li>
           <li><a href="#assembly" >Hardware assembly</a></li>
           <li><a href="#writer" >Using ManyKey Writer</a></li>
           <li><a href="#conclusion">Conclusion</a></li>
@@ -84,10 +80,22 @@
         </div>
 
         <hr>
-        <h3 id="electronics">Wiring the electronics</h3>
-
-        <hr>
-        <h3 id="assembly">Hardware assembly</h3>
+        <h3 id="assembly">Assembly</h3>
+        <div>
+          <p> Once you've collected all the parts and tools, it's time to put this thing together. </p>
+          <p> The first step is to drill the enclosure for the three footswitches and the USB cable. You'll want to drill a small pilot hole to help keep your 1/2" bit in the right place. </p>
+          <img src="img/tutorial/drilled_enclosure.jpg" style="max-width: 500px"/>
+          <p> With the holes drilled, the next step is to start wiring the electronics. I like to install the footswitches into the enclosure first to make sure my wire lengths are correct, but that is up to you. </p>
+          <img src="img/tutorial/basic_schematic.png"/>
+          <p> The wiring here is very simple. When the footswitch is closed, the pin on the microcontroller will be pulled to ground, triggering a key press. </p>
+          <img src="img/tutorial/wiring_in_enclosure.jpg" style="max-width: 500px"/>
+          <p> Next, plug the USB cable into the Arduino, thread it through the hole in the side, and install the plastic strain relief. Screw the bottom plate back onto the enclosure, and you're done with the hardware!</p>
+          <p> Now it's time to program the Arduino with the ManyKey firmware. If you haven't already, download and install the Arduino IDE from <a href="https://www.arduino.cc/en/Main/Software">arduino.cc</a>. Next, you'll want to download the code from <a href="https://github.com/ManyKeyOrg/manykey_firmware_arduino">the github repo</a>, and open it in the Arduino IDE.</p>
+          <img src="img/tutorial/arduino_ide.png" style="max-width: 550px"/>
+          <p>Connect your new keyboard to the computer with the USB cable. If you've never connected the chip to the computer before, you may get some driver installation popups. Once that's all taken care of, select "Arduino Leonardo" as the device type in the Arduino IDE menu. Select the correct port from the port dropdown as well.</p>
+          <p>If you wired the switches to different pins than the default 2, 4, and 6, you will want to change the <i>BUTTON_COUNT</i> and <i>buttonPins</i> variables.</p>
+          <p>At this point you should be ready to flash the Arduino. Hit that "Upload" button! Once the upload finishes, try hitting the buttons on your keyboard to confirm everything is working correctly.</p>
+        </div>
 
         <hr>
         <h3 id="writer">Using ManyKey Writer</h3>
@@ -110,6 +118,10 @@
 
         <hr>
         <h3 id="conclusion">Conclusion</h3>
+        <div>
+          <p>At this point you should have a functional macro keyboard. Nice job!</p>
+          <br>
+        </div>
       </div>
     </div>
 
